@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Baggio Café</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/Logo-Baggio.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  
+  <div class="acessibilidade-controles">
+    <button onclick="alterarFonte('aumentar')">A+</button>
+    <button onclick="alterarFonte('diminuir')">A-</button>
+    <button onclick="alternarContraste()">Alto Contraste</button>
+  </div>
+
+
+  <header class="header">
+    <section>
+      <a href="index.html" class="logo">
+        <img src="img/Logo-Baggio.png" alt="Baggio Café" style="width: 100px;" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html#home">Início</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#avaliacoes">Avaliações</a>
+        <a href="index.html#endereco">Endereço</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </section>
+  </header>
+
+  <section class="contact" id="contato" style="margin-top: 100px;">
+    <h2 class="title">fale <span>conosco</span></h2>
+    <div class="contact-container">
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="tel" name="telefone" placeholder="Seu telefone">
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn">enviar mensagem</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> contato@baggiocafe.com</p>
+        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+        <p><strong>Endereço:</strong> Rua dos Sabores, 123 - São Paulo, SP</p>
+        <p><strong>Atendimento:</strong> 08h às 20h (Seg a Sáb)</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="logo">
+        <img src="img/Logo-Baggio.png" alt="Baggio Café" />
+      </div>
+      <div class="footer-nav">
+        <a href="index.html#home">Início</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#avaliacoes">Avaliações</a>
+        <a href="index.html#endereco">Endereço</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="share">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <div class="footer-copy">
+        © 2025 Baggio Café. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baggio Café</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"/>
+  <link rel="icon" href="img/Logo-Baggio.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  });
+</script>
+
+
+<div class="acessibilidade-controles">
+  <button onclick="alterarFonte('aumentar')">A+</button>
+  <button onclick="alterarFonte('diminuir')">A-</button>
+  <button onclick="alternarContraste()">Alto Contraste</button>
+</div>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+  
+<header class="header">
+  <section>
+    <a href="#" class="logo">
+      <img src="img/Logo-Baggio.png" alt="Baggio Café" style="width: 100px; height: auto;" />
+    </a>
+    <nav class="navbar">
+      <a href="#home">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#menu">Menu</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#endereco">Endereço</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search" title="Pesquisar"></i>
+      <i class="fas fa-shopping-cart" title="Carrinho"></i>
+    </div>
+  </div>
+  </section>
+</header>
+
+<div class="home-container" id="home" style="background: url('img/Design\ sem\ nome.png') no-repeat center center/cover;">
+  <section>
+    <div class="content">
+      <h3>Café Baggio</h3>
+    <p style="color: black; font-size: 1.5em;">Descubra o verdadeiro sabor do café com a gente.</p>
+      <a href="#menu" class="btn" style="font-size: 1.5em;">Ver menu</a>
+    </div>
+  </section>
+</div>
+
+
+<section class="about" id="sobre">
+  <h2 class="title">sobre <span>nós</span></h2>
+  <div class="row">
+    <div class="image">
+    <img src="img/homebaggio.jpg" alt="Sobre Nós" style="width: 100%; max-width: 400px; height: auto;" />
+    </div>
+    <div class="content">
+      <h3>O melhor café da cidade</h3>
+      <p>O Baggio Café oferece uma experiência única com cafés artesanais selecionados. Nosso espaço é feito para quem aprecia um bom sabor e momentos especiais.</p>
+      <p>Desde 1886, unimos tradição e qualidade para servir o melhor café em um ambiente acolhedor.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu" id="menu">
+  <h2 class="title">nosso <span>menu</span></h2>
+  <div class="box-container">
+    <div class="box">
+      <img src="img/menu1.png" alt="Espresso" class="img">
+      <h3>Espresso</h3>
+      <div class="price">R$6,00 <span>R$7,50</span></div>
+    </div>
+    <div class="box">
+      <img src="img/capputinonega.jpg" alt="Capuccino" class="img">
+      <h3>Capuccino</h3>
+      <div class="price">R$9,00 <span>R$10,50</span></div>
+    </div>
+    <div class="box">
+      <img src="img/menu3.png" alt="Leite" class="img">
+      <h3>Leite</h3>
+      <div class="price">R$8,00 <span>R$9,50</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="review" id="avaliacoes">
+  <h2 class="title">nossos <span>clientes</span></h2>
+  <div class="box-container">
+    <div class="box">
+      <p>“O melhor café da cidade! Atendimento excelente e ambiente aconchegante.”</p>
+      <img src="img/pessoa1.jpg" alt="Cliente 1" class="user">
+      <h3>Maria Clara</h3>
+    </div>
+    <div class="box">
+      <p>“Melhor café que já tomei na minha vida. Vai Corinthians!”</p>
+      <img src="img/pessoa3.jpeg" alt="Cliente 2" class="user">
+      <h3>Yuri Alberto</h3>
+    </div>
+    <div class="box">
+      <p>“Ambiente incrível e o café é simplesmente perfeito. Recomendo a todos!”</p>
+      <img src="img/pessoa2.jpg" alt="Cliente 3" class="user">
+      <h3>João Pedro</h3>
+    </div>
+  </div>
+</section>
+
+
+<section class="address" id="endereco">
+    <h2 class="title">nosso <span>endereço</span></h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31793018.894942272!2d-73.16447107577311!3d-13.413332832511056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2428633d27fdb84d%3A0x7c6ce27856f98cd1!2sBaggio%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1745332160932!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </div>
+    <p>Aberto de Segunda a Sábado – 8h às 20h</p>
+    <p>(11) 98765-4321</p>
+</section>
+
+
+<section class="contact" id="contato">
+  <h2 class="title">fale <span>conosco</span></h2>
+  <div class="contact-container">
+    <form action="#" method="post" class="contact-form">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="tel" name="telefone" placeholder="Seu telefone">
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn">enviar mensagem</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Email:</strong> contato@baggiocafe.com</p>
+      <p><strong>Telefone:</strong> (11) 98765-4321</p>
+      <p><strong>Horário de atendimento:</strong> 08h às 20h (Seg a Sáb)</p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="logo">
+      <img src="img/Logo-Baggio.png" alt="Baggio Café" />
+    </div>
+    <div class="footer-nav">
+      <a href="#home">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#menu">Menu</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#endereco">Endereço</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <div class="share">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="footer-copy">
+      © 2025 Baggio Café. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>
